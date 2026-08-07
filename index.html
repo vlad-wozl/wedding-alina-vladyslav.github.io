@@ -3,72 +3,184 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Alina & Vlad | Wedding</title>
+<title>Alina &amp; Vladyslav | Wedding</title>
+<meta name="description" content="Запрошення на весілля Аліни та Владислава — 28 серпня 2026">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Manrope:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<nav class="nav">
+  <a href="#invitation">Запрошення</a>
+  <a href="#dresscode">Дрес-код</a>
+  <a href="#venue">Місце</a>
+  <a href="#agenda">Розклад</a>
+  <a href="#rsvp">Підтвердження</a>
+</nav>
+
 <header class="hero">
-<div class="overlay">
-<p class="eyebrow">Ми одружуємося</p>
-<h1>Alina & Vlad</h1>
-<p class="date">28 серпня 2026 • 15:00</p>
-<a class="btn" href="#rsvp">Підтвердити присутність</a>
-</div>
+  <img class="hero-bg" src="hero-compressed.jpeg" alt="Alina &amp; Vladyslav" width="2200" height="3299" fetchpriority="high">
+  <div class="hero-content">
+    <p class="eyebrow">Ми одружуємось</p>
+    <h1>Alina <span class="amp">&amp;</span> Vladyslav</h1>
+    <p class="date">28 серпня 2026 · Збір гостей 15:00</p>
+    <a class="btn" href="#rsvp">Підтвердити присутність</a>
+  </div>
 </header>
 
-<section class="container">
-<h2>Запрошення</h2>
-<p>Ми будемо щасливі розділити з вами один із найважливіших днів нашого життя.
-Будемо дуже раді бачити вас поруч!</p>
+<section id="countdown" class="container">
+  <div class="section-head">
+    <span class="kicker">Зворотний відлік</span>
+    <h2>До свята залишилось</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="countdown">
+    <div class="cd-item"><span class="cd-num" id="cd-days">00</span><small>днів</small></div>
+    <div class="cd-item"><span class="cd-num" id="cd-hours">00</span><small>годин</small></div>
+    <div class="cd-item"><span class="cd-num" id="cd-minutes">00</span><small>хвилин</small></div>
+    <div class="cd-item"><span class="cd-num" id="cd-seconds">00</span><small>секунд</small></div>
+  </div>
 </section>
 
-<section class="container">
-<h2>Dress Code</h2>
-<div class="palette">
-<div><span style="background:#959683"></span><small>Sage</small></div>
-<div><span style="background:#8F98A5"></span><small>Dusty Blue</small></div>
-<div><span style="background:#4D5769"></span><small>Navy</small></div>
-<div><span style="background:#B4A398"></span><small>Taupe</small></div>
-<div><span style="background:#DECBBA"></span><small>Champagne</small></div>
-<div><span style="background:#D9B9B3"></span><small>Dusty Pink</small></div>
-<div><span style="background:#844B51"></span><small>Burgundy</small></div>
-<div><span style="background:#55514F"></span><small>Charcoal</small></div>
-</div>
+<section id="invitation" class="container">
+  <div class="section-head">
+    <span class="kicker">Наш день</span>
+    <h2>Запрошення</h2>
+    <div class="divider"></div>
+  </div>
+  <p class="lede">
+    Ми будемо щиро раді розділити з вами <em>один із найважливіших днів</em> нашого життя.
+    Ваша присутність — найкращий подарунок, який зробить це свято ще ціннішим.
+    Чекаємо на зустріч із вами!
+  </p>
 </section>
 
-<section class="container">
+<section id="dresscode" class="container">
+  <div class="section-head">
+    <span class="kicker">Дрес-код</span>
+    <h2>Палітра кольорів</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="palette">
+    <div class="swatch"><span style="background:#959683"></span><small>Sage</small></div>
+    <div class="swatch"><span style="background:#8F98A5"></span><small>Dusty Blue</small></div>
+    <div class="swatch"><span style="background:#4D5769"></span><small>Navy</small></div>
+    <div class="swatch"><span style="background:#B4A398"></span><small>Taupe</small></div>
+    <div class="swatch"><span style="background:#DECBBA"></span><small>Champagne</small></div>
+    <div class="swatch"><span style="background:#D9B9B3"></span><small>Dusty Pink</small></div>
+    <div class="swatch"><span style="background:#844B51"></span><small>Burgundy</small></div>
+    <div class="swatch"><span style="background:#55514F"></span><small>Charcoal</small></div>
+  </div>
+  <p class="palette-note">У нас немає суворої палітри кольорів. Це лише джерело натхнення. Найголовніше — одягніть те, у чому вам буде комфортно</p>
+</section>
+
+<section id="venue" class="container">
+  <div class="section-head">
+    <span class="kicker">Локація</span>
     <h2>Місце проведення</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="venue-card">
+    <h3>Haston City Hotel</h3>
+    <p>28 серпня 2026 · Збір гостей 15:00</p>
+    <a class="btn" href="https://maps.app.goo.gl/kREPmJCLLogWb2Zr8" target="_blank" rel="noopener">📍 Прокласти маршрут</a>
+  </div>
+</section>
 
-    <div class="location-card">
-        <h3>Haston City Hotel</h3>
-
-        <p>
-            28 серпня 2026<br>
-            15:00
-        </p>
-
-        <a class="btn secondary"
-           href="https://maps.app.goo.gl/kREPmJCLLogWb2Zr8"
-           target="_blank"
-           rel="noopener">
-            📍 Прокласти маршрут
-        </a>
+<section id="agenda" class="container">
+  <div class="section-head">
+    <span class="kicker">Тайм-лайн дня</span>
+    <h2>Розклад дня</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="timeline">
+    <div class="t-item">
+      <div class="t-time">15:00</div>
+      <div class="t-dot"><span></span></div>
+      <div class="t-content"><b>🥂 Збір гостей</b><span>Знайомство та келих шампанського</span></div>
     </div>
+    <div class="t-item">
+      <div class="t-time">15:30</div>
+      <div class="t-dot"><span></span></div>
+      <div class="t-content"><b>💍 Церемонія</b><span>Урочиста церемонія одруження</span></div>
+    </div>
+    <div class="t-item">
+      <div class="t-time">16:30</div>
+      <div class="t-dot"><span></span></div>
+      <div class="t-content"><b>🍽️ Офіційна частина</b><span>Банкет, тости та вітання</span></div>
+    </div>
+    <div class="t-item">
+      <div class="t-time">23:00</div>
+      <div class="t-dot"><span></span></div>
+      <div class="t-content"><b>🎶 Дискотека</b><span>Танці до самого ранку</span></div>
+    </div>
+  </div>
 </section>
 
 <section id="rsvp" class="container">
-<h2>RSVP</h2>
-<p>Після створення Google Form просто замініть URL нижче.</p>
-<div class="form">
-<iframe src="YOUR_GOOGLE_FORM_URL_HERE"></iframe>
-</div>
+  <div class="section-head">
+    <span class="kicker">RSVP</span>
+    <h2>Підтвердження</h2>
+    <div class="divider"></div>
+  </div>
+  <p class="rsvp-note">
+    Будь ласка, підтвердьте свою присутність та оберіть напій, який будете пити на святі —
+    це допоможе нам все ідеально організувати
+  </p>
+  <div class="rsvp-action">
+    <a class="btn" href="https://forms.gle/zzo2BX9k7nX6ThYc6" target="_blank" rel="noopener">Заповнити RSVP форму</a>
+  </div>
 </section>
 
+<!--
+  БЛОК З ФОТО (прихований)
+  Коли будуть готові спільні фото/відео з весілля — розкоментуйте цей блок
+  і вставте своє посилання (Google Drive, Google Photos тощо) замість YOUR_PHOTOS_LINK_HERE.
+
+<section id="gallery" class="container">
+  <div class="section-head">
+    <span class="kicker">На згадку</span>
+    <h2>Фото з весілля</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="gallery-card">
+    <p class="lede">Ми зібрали спільний альбом із фотографіями нашого свята — переглянути й завантажити можна за посиланням нижче.</p>
+    <a class="btn" href="YOUR_PHOTOS_LINK_HERE" target="_blank" rel="noopener">Переглянути фото</a>
+  </div>
+</section>
+-->
+
 <footer>
-<p>З нетерпінням чекаємо зустрічі ❤️</p>
+  <p>З любов'ю чекаємо зустрічі з вами ❤️</p>
+  <p class="names">Alina &amp; Vladyslav</p>
 </footer>
+
+<script>
+(function(){
+  var target = new Date('2026-08-28T15:00:00+03:00').getTime();
+  var elD = document.getElementById('cd-days'),
+      elH = document.getElementById('cd-hours'),
+      elM = document.getElementById('cd-minutes'),
+      elS = document.getElementById('cd-seconds');
+  function pad(n){ return n < 10 ? '0' + n : String(n); }
+  function tick(){
+    var diff = target - Date.now();
+    if (diff <= 0){ elD.textContent = elH.textContent = elM.textContent = elS.textContent = '00'; return; }
+    var days = Math.floor(diff / 86400000);
+    var hours = Math.floor((diff % 86400000) / 3600000);
+    var mins = Math.floor((diff % 3600000) / 60000);
+    var secs = Math.floor((diff % 60000) / 1000);
+    elD.textContent = pad(days);
+    elH.textContent = pad(hours);
+    elM.textContent = pad(mins);
+    elS.textContent = pad(secs);
+  }
+  tick();
+  setInterval(tick, 1000);
+})();
+</script>
+
 </body>
 </html>
